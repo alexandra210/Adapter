@@ -9,6 +9,7 @@ namespace AdapterProject
     
     class Program
     {
+        //словарь для стран и их кодового обозначения
         Dictionary<string, string> Countries = new Dictionary<string, string>(3);
 
         public Program()
@@ -40,7 +41,6 @@ namespace AdapterProject
             Console.WriteLine(customer.getCompanyName());
             Console.WriteLine(customer.getCountryName());
 
-            
 
             Console.WriteLine("\nAdapter:");
             Console.WriteLine(adapter.getCompanyName());
@@ -155,6 +155,7 @@ namespace AdapterProject
 
         }
 
+        //Класс Новый клиент
         public class newCustomer : Customer
         {
             Program Country;
@@ -182,6 +183,7 @@ namespace AdapterProject
 
         }
 
+        //Класс новый контакт
         public class newContact : Contact
         {
             public string getName()
